@@ -1,365 +1,372 @@
-<!DOCTYPE html><html lang="en" class="watcher loaded"><head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Grok6900 | $GROK6900</title>
-    <meta charset="UTF-8">
-    <style>
-      body {
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
-      }
+<!DOCTYPE html>
+<html lang="en" class="watcher loaded">
 
-      .loaded body {
-        opacity: 1;
-        visibility: visible;
-      }
-    </style>
-    <style>
-      .gallery-section {
-        padding: 50px;
-        background-color: #ababab;
-        text-align: center;
-      }
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Purple BONK</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+    }
 
-      .gallery-section h2 {
-        font-family: "Arial", sans-serif;
-        color: #333;
-        font-size: 2rem;
-        margin-bottom: 30px;
-      }
+    .loaded body {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+  <style>
+    .gallery-section {
+      padding: 50px;
+      background-color: #ababab;
+      text-align: center;
+    }
 
+    .gallery-section h2 {
+      font-family: "Arial", sans-serif;
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .hero-img {
+      margin-top: -12%;
+    }
+
+    @media (max-width: 1024px) {
       .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
       }
 
-      .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-
-      .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      .gallery-item:hover img {
-        transform: scale(1.1);
+      .mob-hidd {
+        display: hidden !important;
       }
 
       .hero-img {
-        margin-top: -12%;
+        margin-top: 5%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-section {
+        padding: 20px;
       }
 
-      @media (max-width: 1024px) {
-        .gallery-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
+      .gallery-section h2 {
+        font-size: 1.5rem;
       }
 
-      @media (max-width: 768px) {
-        .gallery-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .mob-hidd {
-          display: hidden !important;
-        }
-        .hero-img {
-          margin-top: 5%;
-        }
+      .mob-hidd {
+        display: hidden !important;
       }
 
-      @media (max-width: 480px) {
-        .gallery-section {
-          padding: 20px;
-        }
-
-        .gallery-section h2 {
-          font-size: 1.5rem;
-        }
-        .mob-hidd {
-          display: hidden !important;
-        }
-        .hero-img{
+      .hero-img {
         margin-top: 5%
       }
-      }
-    </style>
-    <link rel="stylesheet" href="css/style.min5dec5dec.css">
-    <link rel="shortcut icon" href="images/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.min5dec5dec.css">
+  <link rel="shortcut icon" href="/purplebonk_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-  <body style="">
-    <div class="wrapper">
-      <header class="header" style="">
-        <div class="header__container">
-          <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Logo Icon"></a>
-          <div class="header__rigth">
-            <div class="header__menu menu">
-              <button type="button" class="menu__icon icon-menu">
-                <span></span>
-              </button>
-              <nav class="menu__body">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="index.html#" data-goto=".about" data-goto-header="" class="menu__link"><span>About</span></a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="index.html#" data-goto=".how" data-goto-header="" class="menu__link"><span>How to buy</span></a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="index.html#" data-goto=".tokenomics" data-goto-header="" class="menu__link"><span>Tokenomics</span></a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+<body style="">
+  <div class="wrapper">
+    <header class="header" style="">
+      <div class="header__container">
+        <a href="index.html" class="header__logo"><img src="/purplebonk_web.gif" alt="Logo Icon"></a>
+        <div class="header__rigth">
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html#" data-goto=".about" data-goto-header="" class="menu__link"><span>About</span></a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#" data-goto=".how" data-goto-header="" class="menu__link"><span>How to
+                      buy</span></a>
+                </li>
+                <li class="menu__item">
+                  <a href="index.html#" data-goto=".tokenomics" data-goto-header=""
+                    class="menu__link"><span>Tokenomics</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-            <div class="header__actions" data-da=".menu__body, 991.98">
-              <div class="header__social">
-                <a target="_blank" href="https://x.com/grok6900erc20" class="header__social-item">
-                  <img src="images/x.svg" alt="X Logo">
-                </a>
-                <a target="_blank" href="https://t.me/Grok6900" class="header__social-item">
-                  <img src="images/telegram.svg" alt="Telegram Logo">
-                </a>
-              </div>
-              <a target="_blank" href="https://app.uniswap.org/" class="header__button button">
-                <span>BUy now</span>
-                <span>BUy now</span>
+          <div class="header__actions" data-da=".menu__body, 991.98">
+            <div class="header__social">
+              <a target="_blank" href="https://x.com/" class="header__social-item">
+                <img src="images/x.svg" alt="X Logo">
+              </a>
+              <a target="_blank" href="https://t.me/" class="header__social-item">
+                <img src="images/telegram.svg" alt="Telegram Logo">
               </a>
             </div>
+            <a target="_blank" href="https://app.uniswap.org/" class="header__button button">
+              <span>BUy now</span>
+              <span>BUy now</span>
+            </a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main class="page">
-        <section class="page__hero hero">
-          <div class="hero__container">
-            <img style="width: 95%; max-width: 100%" class="hero-img" src="images/text.jpg" alt="">
-            <!-- <h1 class="hero__title">
+    <main class="page">
+      <section class="page__hero hero">
+        <div class="hero__container">
+          <img style="width: 95%; max-width: 100%" class="hero-img" src="/purplebonk_banner.jpg" alt="">
+          <!-- <h1 class="hero__title">
               <span style="color: red">HarryPotters<span style="color: #ff0000;">Wojak</span><span style="color: #d8e4ff;">Sonic</span><span><span style="color: orangered;">200</span><span style="color: pink;">Inu</span></span> </span>
             </h1> --></br></br>
-<p id="typingText" style="color: #0d0f10; font-family: monospace;"></p>
+          <p id="typingText" style="color: #0d0f10; font-family: monospace;"></p>
 
-<script>
-  const text = "$GROK6900 IS NOW LIVE ON ETHEREUM!";
-  const speed = 50; // typing speed
-  const pause = 1500; // pause before restarting in ms
-  let i = 0;
+          <script>
+            const text = "Purple BONK is not just a meme — it’s a cosmic evolution of BONK energy, born on the lightning-fast Solana blockchain. While the original BONK barked its way into crypto history, Purple BONK took a quantum leap into the degen multiverse, merging chaos, community, and interstellar meme culture.";
+            const speed = 50; // typing speed
+            const pause = 1500; // pause before restarting in ms
+            let i = 0;
 
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typingText").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    } else {
-      setTimeout(() => {
-        document.getElementById("typingText").innerHTML = "";
-        i = 0;
-        typeWriter();
-      }, pause);
-    }
-  }
+            function typeWriter() {
+              if (i < text.length) {
+                document.getElementById("typingText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              } else {
+                setTimeout(() => {
+                  document.getElementById("typingText").innerHTML = "";
+                  i = 0;
+                  typeWriter();
+                }, pause);
+              }
+            }
 
-  typeWriter();
-</script>
-            <br>
-            <div class="hero__actions">
-              <div class="hero__social">
-                <a target="_blank" href="https://dexscreener.com/ethereum/0x9d90a0553c795559027e3f8f865ba220fcd4ee02" class="hero__social-item">
-                  <img src="images/dex.svg" alt="X Logo">
-                </a>
-                <a target="_blank" href="https://www.dextools.io/app/en/ether/pair-explorer/0x9d90a0553c795559027e3f8f865ba220fcd4ee02" class="hero__social-item">
-                  <img src="images/dextools.svg" alt="X Logo">
-                </a>
-                <!-- <a
+            typeWriter();
+          </script>
+          <br>
+          <div class="hero__actions">
+            <div class="hero__social">
+              <a target="_blank" href="https://dexscreener.com/ethereum/0x0000000000000000000000"
+                class="hero__social-item">
+                <img src="images/dex.svg" alt="X Logo">
+              </a>
+              <a target="_blank"
+                href="https://www.dextools.io/app/en/ether/pair-explorer/0x000000000000000000000000"
+                class="hero__social-item">
+                <img src="images/dextools.svg" alt="X Logo">
+              </a>
+              <!-- <a
                   target="_blank"
                   href="https://solscan.io/"
                   class="hero__social-item"
                 >
                   <img src="assets/solscan-logo.webp" alt="X Logo" />
                 </a> -->
-                <a target="_blank" href="https://x.com/grok6900erc20" class="hero__social-item">
-                  <img src="images/x.svg" alt="X Logo">
-                </a>
-                <a target="_blank" href="https://t.me/Grok6900" class="hero__social-item">
-                  <img src="images/telegram.svg" alt="Telegram Logo">
-                </a>
-              </div>
-              <a target="_blank" href="https://app.uniswap.org/" class="hero__button button button--large">
-                <span>BUy now</span>
-                <span>BUy now</span>
+              <a target="_blank" href="https://x.com/" class="hero__social-item">
+                <img src="images/x.svg" alt="X Logo">
+              </a>
+              <a target="_blank" href="https://t.me/" class="hero__social-item">
+                <img src="images/telegram.svg" alt="Telegram Logo">
               </a>
             </div>
+            <a target="_blank" href="https://app.uniswap.org/" class="hero__button button button--large">
+              <span>BUy now</span>
+              <span>BUy now</span>
+            </a>
           </div>
-          <div class="hero__mob-img">
-            <!-- <img src="assets/hero-mob.jpg" alt="Image" /> -->
+        </div>
+        <div class="hero__mob-img">
+          <!-- <img src="assets/hero-mob.jpg" alt="Image" /> -->
+        </div>
+      </section>
+      <div class="page__grey-line"></div>
+      <section data-watch="navigator" class="page__about about" data-watch-threshold="0.50">
+        <div class="about__container">
+          <div class="about__image">
+            <img src="/purplebonk_web.gif" alt="Image" style="display: block; margin: 0 auto;">
           </div>
-        </section>
-        <div class="page__grey-line"></div>
-        <section data-watch="navigator" class="page__about about" data-watch-threshold="0.50">
-          <div class="about__container">
-            <div class="about__image">
-<img src="images/logo.png" alt="Image" style="display: block; margin: 0 auto;">
+          <div class="about__content">
+            <div class="about__hello hello-about _watcher-view" data-watch-threshold="0.9" data-watch-once=""
+              data-watch="">
+              <div class="hello-about__body">
+                <div style="color: black; font-family: monospace;" id="typingText2">
+                  <!-- Text will appear here -->
+                </div>
+              </div>
             </div>
-<div class="about__content">
-  <div class="about__hello hello-about _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-    <div class="hello-about__body">
-      <div style="color: black; font-family: monospace;" id="typingText2">
-        <!-- Text will appear here -->
+          </div>
+
+          <script>
+            const text2 =
+              "Purple BONK is not just a meme — it’s a cosmic evolution of BONK energy, born on the lightning-fast Solana blockchain. While the original BONK barked its way into crypto history, Purple BONK took a quantum leap into the degen multiverse, merging chaos, community, and interstellar meme culture. \n\n Fueled by Solana’s speed and efficiency, Purple BONK is built for those who don’t just trade — they vibe. It’s where low gas meets high energy, where memes mutate, and where every transaction feels like you’re riding a purple comet through the Solana galaxy. \n\n This isn’t your average meme coin. It’s BONK — but weirder, wilder, and dripping in ultraviolet degen power. 💜🐶🌌";
+            let j = 0;
+            const speed2 = 20; // typing speed in ms
+
+            function typeWriter2() {
+              if (j < text2.length) {
+                document.getElementById("typingText2").innerHTML += text2.charAt(j);
+                j++;
+                setTimeout(typeWriter2, speed2);
+              }
+            }
+
+            typeWriter2();
+          </script>
+        </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <section style="background-color: #9e9e9e" data-watch="navigator" class="page__how how" data-watch-threshold="0.36">
+    <div class="how__header">
+      <div class="how__container">
+        <h2 class="how__title title _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
+          <span>How</span><span>to</span><span>buy</span>
+        </h2>
       </div>
     </div>
-  </div>
-</div>
-
-<script>
-  const text2 = "The most advanced AI, Grok6900 a decentralized mixed up of ideas and generator of whatever comes into mind. With comparison from previous 6900 projects, Elon's AI Grok will be the spark to Grok6900 cultured pump and to its organic community of memecoins holders.";
-  let j = 0;
-  const speed2 = 50; // typing speed in ms
-
-  function typeWriter2() {
-    if (j < text2.length) {
-      document.getElementById("typingText2").innerHTML += text2.charAt(j);
-      j++;
-      setTimeout(typeWriter2, speed2);
-    }
-  }
-
-  typeWriter2();
-</script>
-                </div>
-              </div>
+    <div class="how__body">
+      <div class="how__container">
+        <div class="how__body-box body-box">
+          <ul class="body-box__items">
+            <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
+              <p>
+                <span>Set up a crypto wallet on the Ethereum network</span>
+                <span>1</span>
+              </p>
+              <p>
+                Visit <a href="https://metamask.io/">metamask.io</a> and
+                follow the simple steps to create a new account with the
+                Metamask app or browser extension.
+              </p>
+            </li>
+            <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
+              <p>
+                <span>Get some ETH</span>
+                <span>2</span>
+              </p>
+              <p>
+                Tap the BUY button in the app to purchase Ethereum, or
+                deposit ETH to your Metamask wallet from the crypto
+                exchange of your choice.
+              </p>
+            </li>
+            <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
+              <p>
+                <span>Swap ETH for Purple BONK</span>
+                <span>3</span>
+              </p>
+              <p>
+                Tap the SWAP icon in your Metamask wallet and paste the
+                Purple BONK token address. Swap your ETH for Purple BONK.
+              </p>
+            </li>
+            <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
+              <p>
+                <span>Congrats, you are now a Purple BONK holder</span>
+                <span>4</span>
+              </p>
+              <p>Welcome to the Purple BONK revolution.</p>
+            </li>
+          </ul>
+          <div class="body-box__image">
+            <img src="/purplebonk_text.png" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="how__bottom"></div>
+  </section>
+  <section data-watch="navigator" class="page__tokenomics tokenomics" data-watch-threshold="0.39">
+    <div class="tokenomics__container">
+      <h2 class="tokenomics__title title title-centre _watcher-view" data-watch-threshold="0.9" data-watch-once=""
+        data-watch="">
+        <span>Tokenomics</span>
+      </h2>
+      <div class="tokenomics__body">
+        <div class="tokenomics__image">
+          <img style="border-radius: 12px" src="/purplebonk_logo.png" alt="Image">
+        </div>
+        <div class="tokenomics__content _watcher-view" data-watch-threshold="0.8" data-watch-once="" data-watch="">
+          <div class="tokenomics__items">
+            <div class="tokenomics__item">
+              <span>Ownership</span>
+              <span>Renounced</span>
+            </div>
+            <div class="tokenomics__item">
+              <span>Liquidity Pool</span>
+              <span>Burnt</span>
+            </div>
+            <div class="tokenomics__item">
+              <span>Buy/Sell Taxes</span>
+              <span>0/0</span>
+            </div>
+            <div class="tokenomics__item">
+              <span>TOTAL Supply </span>
+              <span>1 Billion</span>
             </div>
           </div>
-        </section>
-        <section style="background-color: #9e9e9e" data-watch="navigator" class="page__how how" data-watch-threshold="0.36">
-          <div class="how__header">
-            <div class="how__container">
-              <h2 class="how__title title _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-                <span>How</span><span>to</span><span>buy</span>
-              </h2>
-            </div>
+          <div class="tokenomics__ca">
+            <p>Contract</p>
+            <p>
+              <span>0x0000000000000000000000</span>
+              <button class="copy-ca-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M33.75 4.375H13.75C13.2527 4.375 12.7758 4.57254 12.4242 4.92417C12.0725 5.27581 11.875 5.75272 11.875 6.25V11.875H6.25C5.75272 11.875 5.27581 12.0725 4.92417 12.4242C4.57254 12.7758 4.375 13.2527 4.375 13.75V33.75C4.375 34.2473 4.57254 34.7242 4.92417 35.0758C5.27581 35.4275 5.75272 35.625 6.25 35.625H26.25C26.7473 35.625 27.2242 35.4275 27.5758 35.0758C27.9275 34.7242 28.125 34.2473 28.125 33.75V28.125H33.75C34.2473 28.125 34.7242 27.9275 35.0758 27.5758C35.4275 27.2242 35.625 26.7473 35.625 26.25V6.25C35.625 5.75272 35.4275 5.27581 35.0758 4.92417C34.7242 4.57254 34.2473 4.375 33.75 4.375ZM24.375 31.875H8.125V15.625H24.375V31.875ZM31.875 24.375H28.125V13.75C28.125 13.2527 27.9275 12.7758 27.5758 12.4242C27.2242 12.0725 26.7473 11.875 26.25 11.875H15.625V8.125H31.875V24.375Z"
+                    fill="black"></path>
+                </svg>
+              </button>
+            </p>
           </div>
-          <div class="how__body">
-            <div class="how__container">
-              <div class="how__body-box body-box">
-                <ul class="body-box__items">
-                  <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-                    <p>
-                      <span>Set up a crypto wallet on the Ethereum network</span>
-                      <span>1</span>
-                    </p>
-                    <p>
-                      Visit <a href="https://metamask.io/">metamask.io</a> and
-                      follow the simple steps to create a new account with the
-                      Metamask app or browser extension.
-                    </p>
-                  </li>
-                  <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-                    <p>
-                      <span>Get some ETH</span>
-                      <span>2</span>
-                    </p>
-                    <p>
-                      Tap the BUY button in the app to purchase Ethereum, or
-                      deposit ETH to your Metamask wallet from the crypto
-                      exchange of your choice.
-                    </p>
-                  </li>
-                  <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-                    <p>
-                      <span>Swap ETH for $GROK6900</span>
-                      <span>3</span>
-                    </p>
-                    <p>
-                      Tap the SWAP icon in your Metamask wallet and paste the
-                      $GROK6900 token address. Swap your ETH for $GROK6900.
-                    </p>
-                  </li>
-                  <li class="body-box__item _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-                    <p>
-                      <span>Congrats, you are now a $GROK6900 holder</span>
-                      <span>4</span>
-                    </p>
-                    <p>Welcome to the $GROK6900 revolution.</p>
-                  </li>
-                </ul>
-                <div class="body-box__image">
-                  <img src="images/stick2.png" alt="Image">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="how__bottom"></div>
-        </section>
-        <section data-watch="navigator" class="page__tokenomics tokenomics" data-watch-threshold="0.39">
-          <div class="tokenomics__container">
-            <h2 class="tokenomics__title title title-centre _watcher-view" data-watch-threshold="0.9" data-watch-once="" data-watch="">
-              <span>Tokenomics</span>
-            </h2>
-            <div class="tokenomics__body">
-              <div class="tokenomics__image">
-                <img style="border-radius: 12px" src="images/logo.png" alt="Image">
-              </div>
-              <div class="tokenomics__content _watcher-view" data-watch-threshold="0.8" data-watch-once="" data-watch="">
-                <div class="tokenomics__items">
-                  <div class="tokenomics__item">
-                    <span>Ownership</span>
-                    <span>Renounced</span>
-                  </div>
-                  <div class="tokenomics__item">
-                    <span>Liquidity Pool</span>
-                    <span>Burnt</span>
-                  </div>
-                  <div class="tokenomics__item">
-                    <span>Buy/Sell Taxes</span>
-                    <span>0/0</span>
-                  </div>
-                  <div class="tokenomics__item">
-                    <span>TOTAL Supply </span>
-                    <span>1 Billion</span>
-                  </div>
-                </div>
-                <div class="tokenomics__ca">
-                  <p>Contract</p>
-                  <p>
-                    <span>0x9d90a0553c795559027e3f8f865ba220fcd4ee02</span>
-                    <button class="copy-ca-btn">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M33.75 4.375H13.75C13.2527 4.375 12.7758 4.57254 12.4242 4.92417C12.0725 5.27581 11.875 5.75272 11.875 6.25V11.875H6.25C5.75272 11.875 5.27581 12.0725 4.92417 12.4242C4.57254 12.7758 4.375 13.2527 4.375 13.75V33.75C4.375 34.2473 4.57254 34.7242 4.92417 35.0758C5.27581 35.4275 5.75272 35.625 6.25 35.625H26.25C26.7473 35.625 27.2242 35.4275 27.5758 35.0758C27.9275 34.7242 28.125 34.2473 28.125 33.75V28.125H33.75C34.2473 28.125 34.7242 27.9275 35.0758 27.5758C35.4275 27.2242 35.625 26.7473 35.625 26.25V6.25C35.625 5.75272 35.4275 5.27581 35.0758 4.92417C34.7242 4.57254 34.2473 4.375 33.75 4.375ZM24.375 31.875H8.125V15.625H24.375V31.875ZM31.875 24.375H28.125V13.75C28.125 13.2527 27.9275 12.7758 27.5758 12.4242C27.2242 12.0725 26.7473 11.875 26.25 11.875H15.625V8.125H31.875V24.375Z" fill="black"></path>
-                      </svg>
-                    </button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/ethereum/0x9d90a0553c795559027e3f8f865ba220fcd4ee02?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"></iframe></div>
-        </section>
-        <section>
-          <div class="gallery-section">
-            <h2
-              class="tokenomics__title title title-centre _watcher-view"
-              data-watch-threshold="0.9"
-              data-watch-once=""
-              data-watch=""
-            >
-              <span>GALLERY</span>
-            </h2>
-            <div class="gallery-grid">
-              <div class="gallery-item">
-                <img src="images/meme1.jpg" alt="Image 1" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- <section class="page__join join">
+        </div>
+      </div>
+    </div>
+    <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:125%;}@media(min-width:1400px){#dexscreener-embed{padding-bottom:65%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:100%;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/osmosis/1948?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"></iframe></div>
+  </section>
+  <section>
+    <div class="">
+      <h2 class="tokenomics__title title title-centre _watcher-view" data-watch-threshold="0.9" data-watch-once=""
+        data-watch="">
+        2025 - Purple BONK. All Right Reserved
+      </h2>
+    </div>
+  </section>
+  <!-- <section class="page__join join">
           <div class="join__container">
             <img
               src="assets/new.png"
@@ -419,8 +426,8 @@
             <img src="assets/chart.jpg" alt="Image" />
           </div>
         </section> -->
-      </main>
-      <!-- <footer class="footer">
+  </main>
+  <!-- <footer class="footer">
         <div class="footer__container">
           <div class="footer__left">
             <div class="footer__social">
@@ -456,8 +463,10 @@
           </div>
         </div>
       </footer> -->
-    </div>
-    <script src="js/app.min5dec5dec.js"></script>
-  
+  </div>
+  <script src="js/app.min5dec5dec.js"></script>
 
-</body></html>
+
+</body>
+
+</html>
